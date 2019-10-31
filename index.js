@@ -17,8 +17,13 @@ app.use(express.json({
 const users = [];
 const events = [];
 
+app.post('/test', (req, res) => {
+  res.json('Server is responding.');
+})
+
+
 app.get('/api/users', (req, res) => {
-  res.send(users);
+  res.json(users);
 })
 
 
@@ -88,7 +93,7 @@ app.post('/api/user', (req, res) => {
   // if new name add it
   if (usersList.length == 0) {
     users.push(user);
-    res.send(user);
+    res.json(user);
   }
   else {
     res.send(`User already exists.`)
