@@ -1,0 +1,15 @@
+{
+  "name": "lyle-test",
+  "version": "1.0.0",
+  "description": "Lyle test project for interview process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "http://localhost:3000/test"
+  },
+  "author": "J. Lyle Martin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^14.3.1"
+  }
+}
